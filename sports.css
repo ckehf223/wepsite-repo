@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+}
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(56, 99, 210);
+}
+.sports_out{
+  display: flex;
+  margin: 0 auto;
+  height: 50%;
+}
+.naver_logo{
+  display: inline-flex;
+  height: 100%;
+  width: 141px;
+  margin: 0;
+}
+.sports_community {
+  width: 72px;
+}
+.sports_nwe{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-top: 2px;
+  height: 100%;
+  width: 127px;
+}
+.sports_login{
+  display: flex;
+  flex-direction: row;
+  margin-left: 600px;
+  padding-right: 2px;
+  width: 94px;
+}
+.login_button{
+  margin:9px;
+  margin-right: 10px;
+  color: white;
+  background-color:  rgb(56, 99, 210);
+  border: 1px solid rgba(42, 42, 42, .3);
+}
+.sports_in{
+  display: flex;
+  height: 50%;
+  border-top: 1px solid rgba(42, 42, 42, .3);
+}
+.sport_in_ul{
+  display: flex;
+  margin: 0 200px;
+  padding: 0;
+  list-style-type: none;
+}
+.item{
+  margin-right: 26px;
+}
