@@ -1,0 +1,54 @@
+#nav{
+  padding: 0;
+  margin: -12px 0 0;
+  display: inline-block;
+  position: relative;
+  width: 100vw;
+  height: 156px;
+  background-color: #eff2f8;
+}
+#nav-in{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+#in-div1{
+  width: 240px;
+  height: 132px;
+  background-image: url(./이미지/nav화면요소1.png);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#in-div2{
+  width: 240px;
+  height: 132px;
+  background-image: url(./이미지/nav화면요소2.png);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#in-div3{
+  width: 240px;
+  height: 132px;
+  background-image: url(./이미지/nav화면요소3.png);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#in-div4{
+  width: 240px;
+  height: 132px;
+  background-image: url(./이미지/nav화면요소4.png);
+  background-size: 100% 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
