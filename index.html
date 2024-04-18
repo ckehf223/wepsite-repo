@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+   
   <title>NAVER</title>
     <style>
       :root{
@@ -82,7 +83,7 @@
     }
     #wrap-center{
       width: 1280px;
-      background-color: yellow;
+      
       display: inline-block;
     }
     #header{
@@ -122,9 +123,330 @@
       height: 32px;
       cursor: pointer;
      }
+     #header-ntalk{
+      background: none;
+      border: none;
+      position: absolute;
+      top: 18px;
+      right: 40px;
+      display: inline-block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -364px -81px;
+      background-repeat: no-repeat;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+     }
+     #header-notify{
+      background: none;
+      border: none;
+      position: absolute;
+      display: inline-block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -364px -27px;
+      background-repeat: no-repeat;
+      width: 26px;
+      height: 26px;
+      top: 18px;
+      right: -5px;
+     }
+     #search{
+      display: flex;
+      height: 55px;
+      width: 708px;
+      border: 1px solid #03c75a;
+      border-radius: 33px;
+      position: absolute;
+      top: 70px;
+      left: 25%;
+     }
+     #search>input{
+      border: none;
+      outline: none;
+      width: 500px;
+      height: 40px;
+      
+      position: relative;
+      left: 60px;
+      top: 10px;
+     }
+     #n-logo{
+      display: block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -350px -359px;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 24px;
+      background-color: #03c75a;
+      position: absolute;
+      left: 30px;
+      top: 16px;
+      border: none;
+     }
+     #keyboard{
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -270px -234px;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 17px;
+      position: relative;
+      top: 25px;
+      left: 94px;
+      background-color: white;
+      border: none;
+     }
+     #arrow{
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -102px -272px;
+      background-repeat: no-repeat;
+      width: 6px;
+      height: 10px;
+      position: relative;
+      right: -105px;
+      top: 28px;
+      border: none;
+      background-color: white;
+     }
     #main{
       height: 2000px;
     }
+    #search-ico{
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -364px -186px;
+      background-repeat: no-repeat;
+      background-color: white;
+      width: 25px;
+      height: 25px;
+      border: none;
+      position: absolute;
+      right: 25px;
+      top: 19px;
+      
+    }
+    #icon_type{
+      display: flex;
+      width: 700px;
+      height: 60px;
+      margin: auto;
+      position: absolute;
+      top: 135px;
+      left: 28%;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_mail{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -250px -90px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_cafe{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -250px 0px;;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_blog{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -201px -98px;;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_shopping{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -90px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_news{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: 0px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_stock{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -180px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_real{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -45px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_map{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -201px 0px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_weptoon{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -225px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_more{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -250px -135px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    span.service_name{
+      position: relative;
+      text-align: center;
+      display: block;
+      margin-top: 7px; 
+      line-height: 20px;
+      top: 42px;
+    }
+    #main_container{
+      position: relative;
+      width: 1280px;
+      height: 2222px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+      background-color: aqua;
+      display: block;
+      text-align: center;
+      top: 340px;
+    }
+    #newsstand{
+      background-color: blue;
+      position: relative;
+      border-radius: 8px;
+      width: 830px;
+      height: 426px;
+    }
+    #newsstand_conhead{
+      background-color: var(--color_button1_bg);
+      position: relative;
+      width: 830px;
+      height: 58px;
+      padding: 18px 20px 17px; 
+      display: flex;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 11px;
+    }
+    #newsstand_conhead>ul{
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      top: 15px;
+      
+    }
+    #newsstand_conhead>ul>li{
+      list-style-type: none;
+      margin: 0 3px;
+      padding: 2px 1px;
+      font-size: 1.2em;
+    }
+    
+    a{
+      text-decoration: none;
+      color: var(--color_news_econ_stay);
+    }
+    
   </style>
 </head>
 <body>
@@ -134,12 +456,48 @@
         <button id="header-hamburger">
           <div></div>
         </button>
-
         <button id="header-npay"> </button>
+        <button id="header-ntalk"></button>
+        <button id="header-notify"></button>
       </div>
-      <div id="search"></div>
+      <div id="search">
+        <input type="text">
+        <button id="n-logo"></button>
+        <button id="keyboard"></button>
+        <button id="arrow"></button>
+        <button id="search-ico"></button>
+      </div>
+      <div class="container" id="icon_type">
+        <div class="item" id="icon_type_mail"><span class="service_name">메일</span></div>
+        <div class="item" id="icon_type_cafe"><span class="service_name">카페</span></div>
+        <div class="item" id="icon_type_blog"><span class="service_name">블로그</span></div>
+        <div class="item" id="icon_type_shopping"><span class="service_name">쇼핑</span></div>
+        <div class="item" id="icon_type_news"><span class="service_name">뉴스</span></div>
+        <div class="item" id="icon_type_stock"><span class="service_name">증권</span></div>
+        <div class="item" id="icon_type_real"><span class="service_name">부동산</span></div>
+        <div class="item" id="icon_type_map"><span class="service_name">지도</span></div>
+        <div class="item" id="icon_type_weptoon"><span class="service_name">웹툰</span></div>
+        <div class="item" id="icon_type_more"></div>
+        
+      </div>
+      <div class="container" role="main" id="main_container">
+        <div class="cotainer" id="newsstand">
+          <div class="content_header" id="newsstand_conhead">
+            <ul>
+              <li><a href="#">뉴스스탠드 / </a></li>
+              <li><a href="#">언론사편집 / </a></li>
+              <li><a href="#">엔터 / </a></li>
+              <li><a href="#">스포츠 / </a></li>
+              <li><a href="#">경제 / </a></li>
+              <li><a href="#">쇼핑투데이 / </a></li>
+              <li><img src="./upload_17113593109742PZWr.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div id="nav"></div>
-      <div id="main"></div>
+      
     </div>
   </div>
 </body>
