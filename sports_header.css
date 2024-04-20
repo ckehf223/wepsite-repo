@@ -29,9 +29,8 @@ html, body {
   width: 47px;
   height: auto;
   padding: 14px 9px 14px 12px;
-  cursor: pointer;
 }
-#out-logo-naver > div{
+#out-logo-naver > a {
   position: absolute;
   background-size: 100% auto;
   background-image: url(./이미지/네이버N모양\ 이미지.png);
@@ -39,13 +38,13 @@ html, body {
   height: 26px;
   left: 12px;
 }
+
 #out-logo-sports{
   width: 94px;
   height: auto;
   padding: 18px 0px 19px;
-  cursor: pointer;
 }
-#out-logo-sports > div{
+#out-logo-sports > a {
   position: absolute;
   background-size: 100% auto;
   background-image: url(./이미지/네이버Sports모양.png);
@@ -57,7 +56,6 @@ html, body {
   width: 72px;
   height: auto;
   padding: 18px 0px 19px;
-  cursor: pointer;
 }
 #out-logo-cummunity > div{
   position: absolute;
@@ -66,13 +64,14 @@ html, body {
   width: 72px;
   height: 17px;
   left: 155px;
+  cursor: pointer;
 }
 #out-logo-news{
   width: 27px;
   height: auto;
   margin: 0 8px;
   padding: 20px 0px 21px;
-  cursor: pointer;
+
 }
 #out-logo-news > div{
   position: absolute;
@@ -81,13 +80,14 @@ html, body {
   width: 27px;
   height: 13px;
   left: 245px;
+  cursor: pointer;
 }
 #out-logo-weather{
   width: 26px;
   height: auto;
   margin: 0 8px;
   padding: 20px 0px 21px;
-  cursor: pointer;
+  
 }
 #out-logo-weather > div{
   position: absolute;
@@ -96,13 +96,14 @@ html, body {
   width: 26px;
   height: 13px;
   left: 290px;
+  cursor: pointer;
 }
 #out-logo-entertain{
   width: 26px;
   height: auto;
   margin: 0 8px;
   padding: 20px 0px 21px;
-  cursor: pointer;
+  
 }
 #out-logo-entertain > div{
   position: absolute;
@@ -111,6 +112,7 @@ html, body {
   width: 26px;
   height: 13px;
   left: 335px;
+  cursor: pointer;
 }
 #out-login{
   width: 53px;
@@ -130,13 +132,11 @@ html, body {
   font-size: 11px;
   color: white;
   cursor: pointer;
-
 }
 #out-logo-hamburger{
   width: 37px;
   height: auto;
   padding: 20px 11px 19px;
-  cursor: pointer;
 }
 #out-logo-hamburger > div{
   position: absolute;
@@ -145,6 +145,7 @@ html, body {
   width: 15px;
   height: 15px;
   right: 32px;
+  cursor: pointer;
 }
 #header-in{
   display: flex;
@@ -160,13 +161,13 @@ html, body {
 #in-logo-8,#in-logo-9,#in-logo-10,#in-logo-11,#in-logo-12,#in-logo-13,#in-logo-14,#in-logo-15{
   height: auto;
   padding: 16px 7px 18px;
-  cursor: pointer;
 }
 #in-logo-1 >div, #in-logo-2 >div, #in-logo-3 >div, #in-logo-4 >div, #in-logo-5 >div, #in-logo-6 >div, 
 #in-logo-7 >div, #in-logo-8 >div, #in-logo-9 >div, #in-logo-10 >div, #in-logo-11 >div, #in-logo-12 >div, 
 #in-logo-13 >div, #in-logo-14 >div, #in-logo-15 >div {
   background-size: 100% auto;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 #in-logo-1{
   width: 87px;

@@ -350,3 +350,117 @@
   right: 8px;
   top: 12px;
 }
+#sub-section2{
+  display: block;
+  position: relative;
+  width: 1007px;
+  height: 450px;
+  text-align: left;
+}
+#section2-title{
+  padding-top: 27px;
+  margin: 0;
+}
+#title-title1{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+#title1-button1{
+  display: inline-block;
+  border: none;
+  background-color: white;
+  width: 6px;
+  height: 15px;
+  margin-left: 4px;
+  background-image: url(./이미지/sp_sports.png);
+  background-size: 260px 246px;
+  background-position: -185px -71px;
+}
+#section2-main2{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 1007px;
+}
+
+.vod-item{
+  width: 194px;
+  margin: 15px 0 0 7px;
+  padding: 0;
+}
+#vod-item1,#vod-item6{
+  margin-left: 0;
+}
+.link-vod-item{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.item-image{
+  overflow: hidden;
+  position: relative;
+  width: 194px;
+  height: 112px;
+  border-radius: 6px;
+  border: 0;
+  background-size: 100% 100%;
+}
+.item-image::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  content: '';
+  border-radius: 6px;
+}
+#item-image1{
+ background-image: url(./이미지/비디오이미지/image1.png); 
+}
+#item-image2{
+ background-image: url(./이미지/비디오이미지/image2.png); 
+}
+#item-image3{
+  background-image: url(./이미지/비디오이미지/image3.png); 
+}
+#item-image4{
+  background-image: url(./이미지/비디오이미지/image4.png); 
+}
+ #item-image5{
+  background-image: url(./이미지/비디오이미지/image5.png); 
+}
+ #item-image6{
+  background-image: url(./이미지/비디오이미지/image6.png); 
+}
+ #item-image7{
+  background-image: url(./이미지/비디오이미지/image7.png); 
+}
+ #item-image8{
+  background-image: url(./이미지/비디오이미지/image8.png); 
+}
+ #item-image9{
+  background-image: url(./이미지/비디오이미지/image9.png); 
+}
+ #item-image10{
+  background-image: url(./이미지/비디오이미지/image10.png); 
+}
+.item-text{
+  color: #333;
+  overflow-wrap: break-word;
+  height: 36px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.end-line{
+  display: block;
+  height: 1px;
+  margin: 30px auto;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}

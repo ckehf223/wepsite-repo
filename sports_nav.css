@@ -15,6 +15,8 @@
   width: 1000px;
   height: 100%;
   margin: 0 auto;
+  position: relative;
+  white-space: nowrap;
 }
 #in-div1{
   width: 240px;
@@ -24,6 +26,11 @@
   border-radius: 20px;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+#in-div1:hover, #in-div2:hover, #in-div3:hover, #in-div4:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.1);
+  transition: all 350ms cubic-bezier(0.215,0.61,0.355,1);
 }
 #in-div2{
   width: 240px;
