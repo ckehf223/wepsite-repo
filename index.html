@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+   
+  <title>NAVER</title>
+    <style>
+      :root{
+    --color_title: #080808;
+    --color_title_rgb: 8, 8, 8;
+    --color_body: #101010;
+    --color_body_rgb: 16, 16, 16;
+    --color_caption1: #404040;
+    --color_caption1_rgb: 64, 64, 64;
+    --color_caption2: #606060;
+    --color_caption2_rgb: 96, 96, 96;
+    --color_caption3: #555558;
+    --color_caption3_rgb: 85, 85, 88;
+    --color_search: #000;
+    --color_search_rgb: 0, 0, 0;
+    --color_border_out: #e3e5e8;
+    --color_border_out_rgb: 227, 229, 232;
+    --color_border_in: #ebebeb;
+    --color_border_in_rgb: 235, 235, 235;
+    --color_border_in_divider: #ebebeb;
+    --color_border_in_divider_rgb: 235, 235, 235;
+    --color_border_in_exception: #ebebeb;
+    --color_border_in_exception_rgb: 235, 235, 235;
+    --color_button_border: #dadcdf;
+    --color_button_border_rgb: 218, 220, 223;
+    --color_dot_divider: #d3d5d7;
+    --color_dot_divider_rgb: 211, 213, 215;
+    --color_block_bg: #fff;
+    --color_block_bg_rgb: 255, 255, 255;
+    --color_board_bg: #f4f6fa;
+    --color_board_bg_rgb: 244, 246, 250;
+    --color_option_bg: #f5f7f8;
+    --color_option_bg_rgb: 245, 247, 248;
+    --color_login_bg: #fafbfb;
+    --color_login_bg_rgb: 250, 251, 251;
+    --color_menu_widget_bg: #fff;
+    --color_menu_widget_bg_rgb: 255, 255, 255;
+    --color_setting_bg: #fff;
+    --color_setting_bg_rgb: 255, 255, 255;
+    --color_button1_bg: #fff;
+    --color_button1_bg_rgb: 255, 255, 255;
+    --color_button2_bg: #fff;
+    --color_button2_bg_rgb: 255, 255, 255;
+    --color_news: #3a67ea;
+    --color_news_rgb: 58, 103, 234;
+    --color_news_econ_stay: #909aab;
+    --color_news_econ_stay_rgb: 144, 154, 171;
+    --color_news_econ_down: #4f67d6;
+    --color_news_econ_down_rgb: 79, 103, 214;
+    --color_live_news_price: #f4361e;
+    --color_live_news_price_rgb: 244, 54, 30;
+    --color_enter: #e538e2;
+    --color_enter_rgb: 229, 56, 226;
+    --color_enter_bg: #f2f1fb;
+    --color_enter_bg_rgb: 242, 241, 251;
+    --color_sports: #1f65ef;
+    --color_sports_rgb: 31, 101, 239;
+    --color_sports_bg: #f4f7fe;
+    --color_sports_bg_rgb: 244, 247, 254;
+    --color_econ: #008f76;
+    --color_econ_rgb: 0, 143, 118;
+    --color_calendar: #eb5b5b;
+    --color_calendar_rgb: 235, 91, 91;
+    --color_dic: #031f5f;
+    --color_dic_rgb: 3, 31, 95;
+    --color_shop: #9858f5;
+    --color_shop_rgb: 152, 88, 245;
+    }
+  
+    html, body{
+      margin: 0;
+      padding: 0;
+    }
+    #wrap{
+      text-align: center;
+    }
+    #wrap-center{
+      width: 1280px;
+      
+      display: inline-block;
+    }
+    #header{
+      position: relative;
+      text-align: left;
+      
+    }
+    #header-hamburger{
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      display: inline-block;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    #header-hamburger>div{
+      background-image:url(./sp_main.png);
+      width: 26px;
+      height: 26px;
+      background-repeat: no-repeat;
+      background-size: 444px 434px;
+      background-position: -314px -330px;
+    }
+    #header-npay{
+      background: none;
+      border: none;
+      position: absolute;
+      top: 18px;
+      left: 43px;
+      display: inline-block; 
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -295px -177px;
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+     }
+     #header-ntalk{
+      background: none;
+      border: none;
+      position: absolute;
+      top: 18px;
+      right: 40px;
+      display: inline-block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -364px -81px;
+      background-repeat: no-repeat;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+     }
+     #header-notify{
+      background: none;
+      border: none;
+      position: absolute;
+      display: inline-block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -364px -27px;
+      background-repeat: no-repeat;
+      width: 26px;
+      height: 26px;
+      top: 18px;
+      right: -5px;
+     }
+     #search{
+      display: flex;
+      height: 55px;
+      width: 708px;
+      border: 1px solid #03c75a;
+      border-radius: 33px;
+      position: absolute;
+      top: 70px;
+      left: 25%;
+     }
+     #search>input{
+      border: none;
+      outline: none;
+      width: 500px;
+      height: 40px;
+      
+      position: relative;
+      left: 60px;
+      top: 10px;
+     }
+     #n-logo{
+      display: block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -350px -359px;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 24px;
+      background-color: #03c75a;
+      position: absolute;
+      left: 30px;
+      top: 16px;
+      border: none;
+     }
+     #keyboard{
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -270px -234px;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 17px;
+      position: relative;
+      top: 25px;
+      left: 94px;
+      background-color: white;
+      border: none;
+     }
+     #arrow{
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -102px -272px;
+      background-repeat: no-repeat;
+      width: 6px;
+      height: 10px;
+      position: relative;
+      right: -105px;
+      top: 28px;
+      border: none;
+      background-color: white;
+     }
+    #main{
+      height: 2000px;
+    }
+    #search-ico{
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -364px -186px;
+      background-repeat: no-repeat;
+      background-color: white;
+      width: 25px;
+      height: 25px;
+      border: none;
+      position: absolute;
+      right: 25px;
+      top: 19px;
+      
+    }
+    #icon_type{
+      display: flex;
+      width: 700px;
+      height: 60px;
+      margin: auto;
+      position: absolute;
+      top: 135px;
+      left: 28%;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_mail{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -250px -90px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_cafe{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -250px 0px;;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_blog{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -201px -98px;;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_shopping{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -90px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_news{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: 0px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_stock{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -180px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_real{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -45px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_map{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -201px 0px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_weptoon{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -225px -209px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #icon_type_more{
+      display: block;
+      background-color: var(--color_button1_bg);
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -250px -135px;
+      background-repeat: no-repeat;
+      border: 0.5px solid var(--color_button_border);
+      border-radius: 13px;
+      width: 44px;
+      height: 44px;
+      margin: 8px;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    span.service_name{
+      position: relative;
+      text-align: center;
+      display: block;
+      margin-top: 7px; 
+      line-height: 20px;
+      top: 42px;
+    }
+    #main_container{
+      position: relative;
+      width: 1280px;
+      height: 2222px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+      display: flex;
+      text-align: center;
+      top: 400px;
+    }
+    #main-left{
+      width: 830px;
+      margin-right: 30px;
+    }
+    #main-right{
+      width: 420px;
+    }
+    #main-left-ad, #main-right-ad{
+      background-color: gray;
+    }
+    #main-left-ad{
+      height: 130px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    #main-right-ad{
+      height: 240px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    #main-newsstand{
+      height: 426px;
+      border: 1px solid var(--color_border_out);
+      border-radius: 8px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-flow: column;
+    }
+    #main-newsstand-top{
+      flex: 1;
+      padding: 18px 20px;
+      line-height: 23px;
+      font-weight: 800;
+      vertical-align: top;
+      color: var(--color_news_econ_stay);
+      -webkit-font-smoothing: antialiased;
+    }
+    #main-newsstand-top .dot::before{
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: #d3d5d7;
+      background-color: var(--color_dot_divider);
+      margin:  9px 7px 0;
+      border-radius: 50%;
+      vertical-align: 3px;
+      
+      line-height: 23px;
+      font-weight: 800;
+      vertical-align: top;
+      
+      -webkit-font-smoothing: antialiased
+    }
+    #main-newsstand-top .slash{
+      position: relative;
+      padding-left: 26px;
+      
+      line-height: 23px;
+      font-weight: 800;
+      vertical-align: top;
+      color: rgba(8,8,8,.5);
+      -webkit-font-smoothing: antialiased;
+    }
+    #main-newsstand-top .slash::before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 4px;
+      left: 13px;
+      width: 1px;
+      height: 15px;
+      background-color: #d3d5d7;
+      background-color: var(--color_dot_divider);
+      -webkit-transform: skew(-15deg);
+      -ms-transform: skew(-15deg);
+      transform: skew(-15deg);
+    }
+    #main-newsstand a{
+      text-decoration: none;
+    }
+    #main-newsstand a:hover{
+      text-decoration: underline;
+    }
+    #main-newsstand header{
+      font-size: 15px;
+      
+      display: flex;
+      justify-content: flex-start;
+      line-height: 23px;
+      margin-bottom: 17px;
+    }
+    #main-newsstand-gray{
+      display: flex;
+      justify-content: flex-start;
+      height: 32px;
+      padding: 12px 20px;
+      background-color: var(--color_option_bg);
+      border-radius: 4px;
+      line-height: 26px;
+      color: var(--color_caption2);
+    }
+    #main-newsstand-gray a:first-of-type{
+      width: 85.5px;
+    }
+    #main-newsstand-animation a:first-of-type::after{
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      background-color: #d3d5d7;
+      background-color: var(--color_dot_divider);
+      margin: 12px 6px 0 6px;
+      border-radius: 50%;
+      vertical-align: top;
+    }
+    #main-newsstand-gray .left{
+      flex: 1;
+      display: flex;
+    }
+    #main-newsstand-gray .left a:first-of-type{
+      content: '';
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -123px -272px;
+      background-repeat: no-repeat;
+      width: 9px;
+      height: 6px;
+      display: inline-block;
+      margin: 10px 0 0 5px;
+      vertical-align: top
+    }
+    #main-newsstand a:visited{
+      color: inherit;
+    }
+    #main-newsstand-grid{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-rows: 56px 56px 56px 56px;
+      grid-template-columns: 131.27px 131.27px 131.27px 131.27px 131.27px 131.27px;
+      border: 1px solid var(--color_border_in);
+      border-radius: 4px;
+      margin-top: 18px;
+      grid-gap: 1px;
+      background-color: var(--color_border_in);
+    }
+    #main-newsstand-grid>div{
+      height: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #main-newsstand-footer{
+      padding: 10px 0 11px;
+      border-top: 1px solid var(--color_border_in);
+      line-height: 35px;
+      font-weight: 600;
+      color: #606060;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    #main-newsstand footer .list{
+      position: absolute;
+      border: none;
+      cursor: pointer;
+      right: 46px;
+      padding: 17px 5px 4px 9px;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -391px -204px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+    }
+    #main-newsstand footer .list1{
+      position: absolute;
+      border: none;
+      cursor: pointer;
+      right: 10px;
+      padding: 4px 9px 18px 9px;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -176px -299px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+    }
+    #main-newsstand-footer .news{
+      color: var(--color_news);
+    }
+    #main-newsstand footer .total{
+      color: rgba(96, 96, 96, .5)
+    }
+    #main-newsstand footer .prev{
+      content: '';
+      width: 36px;
+      height: 36px;
+      border: 1px solid #dadcdf;
+      border: 1px solid var(--color_button_border);
+      background-color: #fff;
+      background-color: var(--color_button1_bg);
+      position: relative;
+      display: inline-block;
+      -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+      border-radius: 50%;
+      vertical-align: top;
+      cursor: pointer;
+      }
+#main-newsstand footer .next{
+      content: '';
+      width: 36px;
+      height: 36px;
+      border: 1px solid #dadcdf;
+      border: 1px solid var(--color_button_border);
+      background-color: #fff;
+      background-color: var(--color_button1_bg);
+      position: relative;
+      display: inline-block;
+      -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+      border-radius: 50%;
+      vertical-align: top;
+      cursor: pointer;
+      margin-left: 13px;
+}
+
+    #main-newsstand footer .text{
+      padding: 0 16px;
+      color: var(--color_news);
+    }
+    #main-newsstand footer .prev .blind{
+      content: "";
+      display: block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -432px -246px;
+      background-repeat: no-repeat;
+      width: 10px;
+      height: 12px;
+      margin: auto;
+      transform: rotate(180deg);
+    }
+    #main-newsstand footer .next .blind{
+      content: "";
+      display: block;
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -432px -246px;
+      background-repeat: no-repeat;
+      width: 10px;
+      height: 12px;
+      margin: auto;
+    }
+    #main-login{
+      height: 164px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      padding: 21px 20px 18px;
+      font-size: 14px;
+      display: flex;
+      flex-flow: column;
+      border: 1px solid var(--color_border_out);
+    }
+    #main-login-button{
+      margin-top: 13px;
+      padding: 17px 0;
+      background-color: #03c75a;
+      color: white;
+      height: 19px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    #main-login-button>i{
+      background-image: url(./sp_main.png);
+      background-size: 444px 434px;
+      background-position: -55px -166px;
+      background-repeat: no-repeat;
+      width: 72px;
+      height: 14px;
+      display: inline-block;
+      margin: 3px 8px 0 0;
+      vertical-align: -1px;
+      
+    }
+    #main-login>div:last-of-type{
+      font-size: 14px;
+      margin: 22px;
+      letter-spacing: 22px;
+    }
+
+    #main-login>div:last-of-type a{
+      text-decoration: none;
+      color: var(--color_caption2);
+      letter-spacing: -0.4px;
+    }
+    #main-login>div:last-of-type>a::nth-of-type(2)::before, #main-login>div:last-of-type>a::nth-of-type(2)::after{
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 12px;
+      background-color: #d3d5d7;
+      background-color: var(--color_dot_divider);
+      margin: 4px 12px 0;
+      
+    }
+    #main-weather{
+      height: 236px;
+      background-color: gray;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    #main-weather, #main-stock{
+      padding: 0 18px;
+    }
+    #main-weather>header, #main-stock>header{
+     height: 52px;
+     padding: 6px 0;
+    }
+    #main-weather>div, #main-stock>div{
+     border-top: 1px solid var(--color_border_in);
+    }
+    #main-shopping{
+      height: 560px;
+      background-color: gray;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    #main-shopping-flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #main-shopping .left{
+      position: absolute;
+      left: 30px;
+    }
+    #main-shopping .right{
+      position: relative;
+      right: -415px;
+    }
+    #main-shopping-top{
+      flex: 1;
+      padding: 18px 20px;
+      line-height: 23px;
+      font-weight: 800;
+      vertical-align: top;
+      color: var(--color_news_econ_stay);
+      -webkit-font-smoothing: antialiased;
+    }
+    #main-shopping-top .dot::before{
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: #d3d5d7;
+      background-color: var(--color_dot_divider);
+      margin:  9px 7px 0;
+      border-radius: 50%;
+      vertical-align: 3px;
+      
+      line-height: 23px;
+      font-weight: 800;
+      vertical-align: top;
+      
+      -webkit-font-smoothing: antialiased
+    }
+    #main-shopping-top .slash{
+      position: relative;
+      padding-left: 26px;
+      
+      line-height: 23px;
+      font-weight: 800;
+      vertical-align: top;
+      color: rgba(8,8,8,.5);
+      -webkit-font-smoothing: antialiased;
+    }
+    #main-shopping-top .slash::before{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 4px;
+      left: 13px;
+      width: 1px;
+      height: 15px;
+      background-color: #d3d5d7;
+      background-color: var(--color_dot_divider);
+      -webkit-transform: skew(-15deg);
+      -ms-transform: skew(-15deg);
+      transform: skew(-15deg);
+    }
+    #main-shopping a{
+      text-decoration: none;
+    }
+    #main-shopping a:hover{
+      text-decoration: underline;
+    }
+    #main-shopping header{
+      font-size: 15px;
+      
+      display: flex;
+      justify-content: flex-start;
+      line-height: 23px;
+      margin-bottom: 17px;
+    }
+    #main-feedarea{
+      height: 960px;
+      background-color: gray;
+    }
+    #main-right-ad2{
+      height: 80px;
+      background-color: gray;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    #main-widget{
+      height: 1010px;
+      background-color: gray;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    #main-right-ad3{
+      height: 80px;
+      background-color: gray;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="wrap-center">
+      <div id="header">
+        <button id="header-hamburger">
+          <div></div>
+        </button>
+        <button id="header-npay"> </button>
+        <button id="header-ntalk"></button>
+        <button id="header-notify"></button>
+      </div>
+      <div id="search">
+        <input type="text">
+        <button id="n-logo"></button>
+        <button id="keyboard"></button>
+        <button id="arrow"></button>
+        <button id="search-ico"></button>
+      </div>
+      <div class="container" id="icon_type">
+        <div class="item" id="icon_type_mail"><span class="service_name">메일</span></div>
+        <div class="item" id="icon_type_cafe"><span class="service_name">카페</span></div>
+        <div class="item" id="icon_type_blog"><span class="service_name">블로그</span></div>
+        <div class="item" id="icon_type_shopping"><span class="service_name">쇼핑</span></div>
+        <div class="item" id="icon_type_news"><span class="service_name">뉴스</span></div>
+        <div class="item" id="icon_type_stock"><span class="service_name">증권</span></div>
+        <div class="item" id="icon_type_real"><span class="service_name">부동산</span></div>
+        <div class="item" id="icon_type_map"><span class="service_name">지도</span></div>
+        <div class="item" id="icon_type_weptoon"><span class="service_name">웹툰</span></div>
+        <div class="item" id="icon_type_more"></div>
+        
+      </div>
+      <main class="container" role="main" id="main_container">
+        <main-left id="main-left">
+          <div id="main-left-ad"></div>
+          <div id="main-newsstand">
+          <div id="main-newsstand-top">
+            <header>
+              <a href="#" style="font-weight: bold;">뉴스스탠드</a>
+              <a href="#" class="dot">언론사편집</a>
+              <a href="#" class="slash">엔터</a>
+              <a href="#" class="slash">스포츠</a>
+              <a href="#" class="slash">경제</a>
+              <a href="#" class="slash">쇼핑투데이</a>
+            </header>
+            <div id="main-newsstand-gray">
+              <div class="left">
+              <a href="#">전체언론사</a>
+              <div id="main-newsstand-animation">
+              <a href="#">연합뉴스</a>
+              <a href="#">안녕하세요</a>
+              </div>
+              </div>
+              <div class="right">
+                <a href="#">뉴스스탠드</a>
+                <a href="#">뉴스홈</a>
+              </div>
+            </div>
+            <div id="main-newsstand-grid">
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+                <div>뉴스1</div>
+            </div>
+          </div>
+            <footer id="main-newsstand-footer">
+              <button class="prev"><span class="blind"></span></button>
+              <div ><span class="text">언론사</span>더보기1<span class="total">/4</span></div>
+              <button class="next"><span class="blind"></span></button>
+              <button class="list"><span class="blind"></span></button>
+              <button class="list1"><span class="blind"></span></button>
+            </footer>
+          </div>
+          <div id="main-shopping">
+            <header>
+            <div id="main-shopping-top">
+              <div class="left">
+              <a href="#" style="font-weight: bold; color: rgba(8, 8, 8, .5);">쇼핑</a>
+              <a href="#" class="dot" style="color: rgba(8, 8, 8, .5);">맨즈</a>
+              <a href="#" class="slash" >원쁠딜</a>
+              <a href="#" class="slash">쇼핑라이브</a>
+            </div>
+            <div class="right">
+              <span>1</span>
+              <span>/18</span>
+              <button class="prev"></button>
+              <button class="next"></button>
+            </div>
+          </div>
+            <div id="main-shopping-flex">
+              <div class="item">1</div>
+              <div class="item">2</div>
+              <div class="item">3</div>
+              <div class="item">4</div>
+              <div class="item">5</div>
+              <div class="item">6</div>
+              <div class="item">7</div>
+              <div class="item">8</div>
+              <div class="item">9</div>
+              <div class="item">10</div>
+              <div class="item">11</div>
+              <div class="item">12</div>
+              <div class="item">13</div>
+            </div>
+            </header>
+            <footer>
+              <button class="prev"><span class="blind"></span></button>
+              <div ><span class="text">쇼핑아이템</span>더보기1<span class="total">/13</span></div>
+              <button class="next"><span class="blind"></span></button>
+              <button class="list"><span class="blind"></span></button>
+              <button class="list1"><span class="blind"></span></button>
+            </footer>
+          </div>
+          <div id="main-feedarea"></div>
+        </main-left>
+        <main-right class="container" id="main-right">
+          <div id="main-login">
+            <div style="line-height: 20px;">네이버를 더 안전하고 편리하게 이용하세요</div>
+            <a href="#" id="main-login-button"><i></i>로그인</a>
+            <div>
+              <a href="#">아이디 찾기</a>
+              <a href="#">비밀번호 찾기</a>
+              <a href="#">회원가입</a>
+            </div>
+          </div>
+          <div id="main-right-ad"></div>
+          <div id="main-weather">
+            <header>날씨</header>
+            <div></div>
+          </div>
+          <div id="main-stock">
+            <header>증시</header>
+            <div></div>
+          </div>
+          <div id="main-right-ad2"></div>
+          <div id="main-widget"></div>
+          <div id="main-right-ad3"></div>
+        </main-right>
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>
