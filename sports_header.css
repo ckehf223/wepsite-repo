@@ -33,7 +33,7 @@ html, body {
 #out-logo-naver > a {
   position: absolute;
   background-size: 100% auto;
-  background-image: url(./이미지/네이버N모양\ 이미지.png);
+  background-image: url(./sports_image/네이버N모양\ 이미지.png);
   width: 26px;
   height: 26px;
   left: 12px;
@@ -47,7 +47,7 @@ html, body {
 #out-logo-sports > a {
   position: absolute;
   background-size: 100% auto;
-  background-image: url(./이미지/네이버Sports모양.png);
+  background-image: url(./sports_image/네이버Sports모양.png);
   width: 94px;
   height: 17px;
   left: 45px;
@@ -60,7 +60,7 @@ html, body {
 #out-logo-cummunity > div{
   position: absolute;
   background-size: 100% auto;
-  background-image: url(./이미지/네이버스포츠\ 커뮤니티.png);
+  background-image: url(./sports_image/네이버스포츠\ 커뮤니티.png);
   width: 72px;
   height: 17px;
   left: 155px;
@@ -76,7 +76,7 @@ html, body {
 #out-logo-news > div{
   position: absolute;
   background-size: 100% auto;
-  background-image: url(./이미지/네이버스포츠\ 뉴스.png);
+  background-image: url(./sports_image/네이버스포츠\ 뉴스.png);
   width: 27px;
   height: 13px;
   left: 245px;
@@ -92,7 +92,7 @@ html, body {
 #out-logo-weather > div{
   position: absolute;
   background-size: 100% auto;
-  background-image: url(./이미지/네이버스포츠\ 날씨.png);
+  background-image: url(./sports_image/네이버스포츠\ 날씨.png);
   width: 26px;
   height: 13px;
   left: 290px;
@@ -108,7 +108,7 @@ html, body {
 #out-logo-entertain > div{
   position: absolute;
   background-size: 100% auto;
-  background-image: url(./이미지/네이버스포츠\ 연예.png);
+  background-image: url(./sports_image/네이버스포츠\ 연예.png);
   width: 26px;
   height: 13px;
   left: 335px;
@@ -141,7 +141,7 @@ html, body {
 #out-logo-hamburger > div{
   position: absolute;
   background-size: 100% auto;
-  background-image: url(./이미지/네이버스포츠\ 더보기모양.png);
+  background-image: url(./sports_image/네이버스포츠\ 더보기모양.png);
   width: 15px;
   height: 15px;
   right: 32px;
@@ -173,7 +173,7 @@ html, body {
   width: 87px;
 }
 #in-logo-1 >div{
-  background-image: url(./이미지/네이버스포츠\ 스포츠홈.png);
+  background-image: url(./sports_image/네이버스포츠\ 스포츠홈.png);
   width: 73px;
   height: 22px;
 }
@@ -181,7 +181,7 @@ html, body {
   width: 48px;
 }
 #in-logo-2 >div{
-  background-image: url(./이미지/네이버스포츠\ 야구.png);
+  background-image: url(./sports_image/네이버스포츠\ 야구.png);
   width: 34px;
   height: 22px;
 
@@ -190,7 +190,7 @@ html, body {
   width: 82px;
 }
 #in-logo-3 >div{
-  background-image: url(./이미지/네이버스포츠\ 해외야구.png);
+  background-image: url(./sports_image/네이버스포츠\ 해외야구.png);
   width: 68px;
   height: 22px;
 }
@@ -198,7 +198,7 @@ html, body {
   width: 48px;
 }
 #in-logo-4 >div{
-  background-image: url(./이미지/네이버스포츠\ 축구.png);
+  background-image: url(./sports_image/네이버스포츠\ 축구.png);
   width: 34px;
   height: 22px;
 }
@@ -206,7 +206,7 @@ html, body {
   width: 82px;
 }
 #in-logo-5 >div{
-  background-image: url(./이미지/네이버스포츠\ 해외축구.png);
+  background-image: url(./sports_image/네이버스포츠\ 해외축구.png);
   width: 68px;
   height: 22px;
 }
@@ -214,7 +214,7 @@ html, body {
   width: 48px;
 }
 #in-logo-6 >div{
-  background-image: url(./이미지/네이버스포츠\ 농구.png);
+  background-image: url(./sports_image/네이버스포츠\ 농구.png);
   width: 34px;
   height: 22px;
 }
@@ -222,7 +222,7 @@ html, body {
   width: 48px;
 }
 #in-logo-7 >div{
-  background-image: url(./이미지/네이버스포츠\ 배구.png);
+  background-image: url(./sports_image/네이버스포츠\ 배구.png);
   width: 34px;
   height: 22px;
 }
@@ -230,7 +230,7 @@ html, body {
   width: 48px;
 }
 #in-logo-8 >div{
-  background-image: url(./이미지/네이버스포츠\ 골프.png);
+  background-image: url(./sports_image/네이버스포츠\ 골프.png);
   width: 34px;
   height: 22px;
 }
@@ -239,7 +239,7 @@ html, body {
   padding-top: 13px;
 }
 #in-logo-9 >div{
-  background-image: url(./이미지/네이버스포츠\ 일반.png);
+  background-image: url(./sports_image/네이버스포츠\ 일반.png);
   width: 34px;
   height: 22px;
 }
@@ -247,7 +247,7 @@ html, body {
   width: 74px;
 }
 #in-logo-10>div{
-  background-image: url(./이미지/네이버스포츠\ e스포츠.png);
+  background-image: url(./sports_image/네이버스포츠\ e스포츠.png);
   width: 60px;
   height: 22px;
 }
@@ -257,7 +257,7 @@ html, body {
   padding: 16px 7px 18px 12px;
 }
 #in-logo-11>div{
-  background-image: url(./이미지/네이버스포츠\ 승부예측.png);
+  background-image: url(./sports_image/네이버스포츠\ 승부예측.png);
   width: 68px;
   height: 22px;
 }
@@ -266,7 +266,7 @@ html, body {
   padding-top: 13px;
 }
 #in-logo-12>div{
-  background-image: url(./이미지/네이버스포츠\ 연재.png);
+  background-image: url(./sports_image/네이버스포츠\ 연재.png);
   width: 34px;
   height: 22px;
 }
@@ -274,7 +274,7 @@ html, body {
   width: 104px;
 }
 #in-logo-13>div{
-  background-image: url(./이미지/네이버스포츠\ 오늘의\ 경기.png);
+  background-image: url(./sports_image/네이버스포츠\ 오늘의\ 경기.png);
   width: 90px;
   height: 22px;
 }
@@ -282,7 +282,7 @@ html, body {
   width: 48px;
 }
 #in-logo-14>div{
-  background-image: url(./이미지/네이버스포츠\ 랭킹.png);
+  background-image: url(./sports_image/네이버스포츠\ 랭킹.png);
   width: 34px;
   height: 22px;
 }
@@ -290,7 +290,7 @@ html, body {
   width: 99px;
 }
 #in-logo-15>div{
-  background-image: url(./이미지/네이버스포츠\ 대학스포츠.png);
+  background-image: url(./sports_image/네이버스포츠\ 대학스포츠.png);
   width: 85px;
   height: 22px;
 }

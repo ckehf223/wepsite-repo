@@ -20,7 +20,7 @@
   color: inherit;
   width: 45px;
   height: 45px;
-  background-image: url(./이미지/sp_sports.png);
+  background-image: url(./sports_image/sp_sports.png);
   background-position: -62px -2px ;
   background-size: 300px 280px;
   background-repeat: no-repeat;
@@ -64,37 +64,37 @@
   }
 }
 #item1-video1{
-  background-image: url(./이미지/video요소1.png);
+  background-image: url(./sports_image/video요소1.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   
 }
 #item1-video2{
-  background-image: url(./이미지/video요소2.png);
+  background-image: url(./sports_image/video요소2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   
 }
 #item1-video3{
-  background-image: url(./이미지/video요소3.png);
+  background-image: url(./sports_image/video요소3.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 #item1-video4{
-  background-image: url(./이미지/video요소4.png);
+  background-image: url(./sports_image/video요소4.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 #item1-video5{
-  background-image: url(./이미지/video요소5.png);
+  background-image: url(./sports_image/video요소5.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 #item1-video6{
-  background-image: url(./이미지/video요소6.png);
+  background-image: url(./sports_image/video요소6.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -168,12 +168,12 @@
   cursor: pointer;
 }
 #sub1-button1{
-  background-image: url(./이미지/sp_jun_v19.png);
+  background-image: url(./sports_image/sp_jun_v19.png);
   right: 40px;
   background-position: -94px -828px;
 }
 #sub1-button2{
-  background-image: url(./이미지/sp_jun_v19.png);
+  background-image: url(./sports_image/sp_jun_v19.png);
   right: 20px;
   background-position: -21px -828px;
 }
@@ -199,19 +199,19 @@
   background-size: 100% 100%;
 }
 #sub2-item1-video1{
-  background-image: url(./이미지/video요소7.png);
+  background-image: url(./sports_image/video요소7.png);
 }
 #sub2-item2-video2{
-  background-image: url(./이미지/video요소8.png);
+  background-image: url(./sports_image/video요소8.png);
 }
 #sub2-item3-video3{
-  background-image: url(./이미지/video요소9.png);
+  background-image: url(./sports_image/video요소9.png);
 }
 #sub2-item4-video4{
-  background-image: url(./이미지/video요소10.png);
+  background-image: url(./sports_image/video요소10.png);
 }
 #sub2-item5-video5{
-  background-image: url(./이미지/video요소11.png);
+  background-image: url(./sports_image/video요소11.png);
 }
 #sub2-item1-text1, #sub2-item2-text2, #sub2-item3-text3, #sub2-item4-text4, #sub2-item5-text5 {
   display: flex;
@@ -270,12 +270,12 @@
   bottom: 5px;
 }
 #sub3-button1{
-  background-image: url(./이미지/sp_jun_v19.png);
+  background-image: url(./sports_image/sp_jun_v19.png);
   right: 30px;
   background-position: -94px -828px;
 }
 #sub3-button2{
-  background-image: url(./이미지/sp_jun_v19.png);
+  background-image: url(./sports_image/sp_jun_v19.png);
   right: 10px;
   background-position: -21px -828px;
 }
@@ -312,7 +312,7 @@
   height: 54px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.04);
-  background-image: url(./이미지/연재구독사진요소.png);
+  background-image: url(./sports_image/연재구독사진요소.png);
   background-size: 100% 100%;
   cursor: pointer;
 }
@@ -357,7 +357,7 @@
   padding-left: 14px;
   top: 8px;
   left: 15px;
-  background-image: url(./이미지/연재구독사진요소2.png);
+  background-image: url(./sports_image/연재구독사진요소2.png);
   background-size: 65% 65%;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -370,7 +370,7 @@
   color: #2b6fdc;
   border-radius: 16px;
   background-color: #fff;
-  background-image: url(./이미지/연재구독버튼.png);
+  background-image: url(./sports_image/연재구독버튼.png);
   background-repeat: no-repeat;
   background-size: 70% 70%;
   background-position: 6px 2px;
@@ -401,7 +401,7 @@
   width: 6px;
   height: 15px;
   margin-left: 4px;
-  background-image: url(./이미지/sp_sports.png);
+  background-image: url(./sports_image/sp_sports.png);
   background-size: 260px 246px;
   background-position: -185px -71px;
 }
@@ -452,34 +452,34 @@
   border-radius: 6px;
 }
 #item-image1{
- background-image: url(./이미지/비디오이미지/image1.png); 
+ background-image: url(./sports_image/sports_video_image/image1.png); 
 }
 #item-image2{
- background-image: url(./이미지/비디오이미지/image2.png); 
+ background-image: url(./sports_image/sports_video_image/image2.png); 
 }
 #item-image3{
-  background-image: url(./이미지/비디오이미지/image3.png); 
+  background-image: url(./sports_image/sports_video_image/image3.png); 
 }
 #item-image4{
-  background-image: url(./이미지/비디오이미지/image4.png); 
+  background-image: url(./sports_image/sports_video_image/image4.png); 
 }
  #item-image5{
-  background-image: url(./이미지/비디오이미지/image5.png); 
+  background-image: url(./sports_image/sports_video_image/image5.png); 
 }
  #item-image6{
-  background-image: url(./이미지/비디오이미지/image6.png); 
+  background-image: url(./sports_image/sports_video_image/image6.png); 
 }
  #item-image7{
-  background-image: url(./이미지/비디오이미지/image7.png); 
+  background-image: url(./sports_image/sports_video_image/image7.png); 
 }
  #item-image8{
-  background-image: url(./이미지/비디오이미지/image8.png); 
+  background-image: url(./sports_image/sports_video_image/image8.png); 
 }
  #item-image9{
-  background-image: url(./이미지/비디오이미지/image9.png); 
+  background-image: url(./sports_image/sports_video_image/image9.png); 
 }
  #item-image10{
-  background-image: url(./이미지/비디오이미지/image10.png); 
+  background-image: url(../sports_image/sports_video_image/image10.png); 
 }
 .item-text{
   color: #333;
