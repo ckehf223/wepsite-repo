@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-   
+  <link rel="stylesheet" href="sports.html">
+  <link rel="stylesheet" href="./naver_yehchan/naver/naverblog.html">
+  <link rel="stylesheet" href="./naver-cafe3.html">
   <title>NAVER</title>
     <style>
       :root{
@@ -513,22 +515,7 @@
     #main-newsstand-gray a:first-of-type{
       width: 85.5px;
     }
-    #main-newsstand-animation a:first-of-type::after{
-      content: '';
-      display: inline-block;
-      width: 3px;
-      height: 3px;
-      background-color: #d3d5d7;
-      background-color: var(--color_dot_divider);
-      margin: 12px 6px 0 6px;
-      border-radius: 50%;
-      vertical-align: top;
-    }
-    #main-newsstand-gray .left{
-      flex: 1;
-      display: flex;
-    }
-    #main-newsstand-gray .left a:first-of-type{
+    #main-newsstand-gray-first a:first-of-type::after{
       content: '';
       background-image: url(./sp_main.png);
       background-size: 444px 434px;
@@ -538,7 +525,26 @@
       height: 6px;
       display: inline-block;
       margin: 10px 0 0 5px;
-      vertical-align: top
+      vertical-align: top;
+    }
+    #main-newsstand-gray .left{
+      flex: 1;
+      display: flex;
+    }
+    #main-newsstand-animation a:first-of-type::after{
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: #d3d5d7;
+      background-color: var(--color_dot_divider);
+      margin: 9px 7px 0;
+      border-radius: 50%;
+      vertical-align: 3px;
+      line-height: 23px;
+      font-weight: 800;
+      vertical-align: top;
+      -webkit-font-smoothing: antialiased;
     }
     #main-newsstand a:visited{
       color: inherit;
@@ -621,6 +627,8 @@
       border-radius: 50%;
       vertical-align: top;
       cursor: pointer;
+      position: relative;
+      top: -5px;
       }
 #main-newsstand footer .next{
       content: '';
@@ -637,11 +645,13 @@
       border-radius: 50%;
       vertical-align: top;
       cursor: pointer;
-      margin-left: 13px;
+      margin-left: 3px;
+      position: relative;
+      top: -5px;
 }
 
     #main-newsstand footer .text{
-      padding: 0 16px;
+      padding: 0 2px;
       color: var(--color_news);
     }
     #main-newsstand footer .prev .blind{
@@ -718,6 +728,7 @@
       background-color: var(--color_dot_divider);
       margin: 4px 12px 0;
       
+      
     }
     #main-weather{
       height: 236px;
@@ -737,14 +748,40 @@
     }
     #main-shopping{
       height: 560px;
-      background-color: gray;
+      border: 1px solid var(--color_border_out);
       border-radius: 8px;
       margin-bottom: 16px;
+      position: relative;
+      
     }
-    #main-shopping-flex{
+    #item123{
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 25px;
+   }
+    #main-shopping-flex .item1{
+      width: 248px;
+      height: 88px;
+      margin-bottom: 10px;
+      border: 1px solid var(--color_border_out);
+      border-radius: 4px;
+    }
+    #main-shopping-flex .item2{
+      display: flex;
+      width: 248px;
+      height: 74px;
+      border: 1px solid var(--color_border_out);
+      border-radius: 4px;
+      margin-bottom: 10px;     
+    }
+    #main-shopping-flex .item3{
+      display: flex;
+      width: 248px;
+      height: 146px;
+      border: 1px solid var(--color_border_out);
+      border-radius: 4px; 
     }
     #main-shopping .left{
       position: absolute;
@@ -812,11 +849,20 @@
     }
     #main-shopping header{
       font-size: 15px;
-      
       display: flex;
       justify-content: flex-start;
       line-height: 23px;
       margin-bottom: 17px;
+    }
+    #main-shopping footer{
+      padding: 10px 0 11px;
+      border-top: 1px solid var(--color_border_in);
+      line-height: 35px;
+      font-weight: 600;
+      color: #606060;
+      display: flex;
+      justify-content: center;
+      position: relative;
     }
     #main-feedarea{
       height: 960px;
@@ -840,6 +886,10 @@
       border-radius: 8px;
       margin-bottom: 16px;
     }
+    #icon_type a{
+      text-decoration: none;
+      color: var(--color_body);
+    }
   </style>
 </head>
 <body>
@@ -862,8 +912,8 @@
       </div>
       <div class="container" id="icon_type">
         <div class="item" id="icon_type_mail"><span class="service_name">메일</span></div>
-        <div class="item" id="icon_type_cafe"><span class="service_name">카페</span></div>
-        <div class="item" id="icon_type_blog"><span class="service_name">블로그</span></div>
+        <div class="item" id="icon_type_cafe"><span class="service_name"><a href="./naver-cafe3.html" target="_blank">카페</a></span></div>
+        <div class="item" id="icon_type_blog"><span class="service_name"><a href="./naver_yehchan/naver/naverblog.html" target="_blank">블로그</a></span></div>
         <div class="item" id="icon_type_shopping"><span class="service_name">쇼핑</span></div>
         <div class="item" id="icon_type_news"><span class="service_name">뉴스</span></div>
         <div class="item" id="icon_type_stock"><span class="service_name">증권</span></div>
@@ -882,13 +932,15 @@
               <a href="#" style="font-weight: bold;">뉴스스탠드</a>
               <a href="#" class="dot">언론사편집</a>
               <a href="#" class="slash">엔터</a>
-              <a href="#" class="slash">스포츠</a>
+              <a href="sports.html" class="slash" target="_blank">스포츠</a>
               <a href="#" class="slash">경제</a>
               <a href="#" class="slash">쇼핑투데이</a>
             </header>
             <div id="main-newsstand-gray">
               <div class="left">
+                <div id="main-newsstand-gray-first">
               <a href="#">전체언론사</a>
+                </div>
               <div id="main-newsstand-animation">
               <a href="#">연합뉴스</a>
               <a href="#">안녕하세요</a>
@@ -951,24 +1003,26 @@
             </div>
           </div>
             <div id="main-shopping-flex">
-              <div class="item">1</div>
-              <div class="item">2</div>
-              <div class="item">3</div>
-              <div class="item">4</div>
-              <div class="item">5</div>
-              <div class="item">6</div>
-              <div class="item">7</div>
-              <div class="item">8</div>
-              <div class="item">9</div>
-              <div class="item">10</div>
-              <div class="item">11</div>
-              <div class="item">12</div>
-              <div class="item">13</div>
+              <div id="item123">
+              <div class="item1">1</div>
+              <div class="item2">2</div>
+              <div class="item3">3</div>
+              </div>
+              <div class="item4">4</div>
+              <div class="item5">5</div>
+              <div class="item6">6</div>
+              <div class="item7">7</div>
+              <div class="item8">8</div>
+              <div class="item9">9</div>
+              <div class="item10">10</div>
+              <div class="item11">11</div>
+              <div class="item12">12</div>
+              <div class="item13">13</div>
             </div>
             </header>
             <footer>
               <button class="prev"><span class="blind"></span></button>
-              <div ><span class="text">쇼핑아이템</span>더보기1<span class="total">/13</span></div>
+              <div><span class="text">쇼핑아이템</span>더보기1<span class="total">/13</span></div>
               <button class="next"><span class="blind"></span></button>
               <button class="list"><span class="blind"></span></button>
               <button class="list1"><span class="blind"></span></button>
