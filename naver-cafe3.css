@@ -1,0 +1,559 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+/* div.hd{
+    height: 50px;
+}
+div.hdcl{
+    position: fixed;
+} */
+header{
+    position: sticky;
+    top:0px;
+    height: 50px;
+    margin: 20px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid;
+    border-color: white white lightgray white;
+}
+header>#logo { 
+    width: 20%;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header>#search{
+    width:30%;
+    height: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+}
+input:focus{
+    outline: 0px;
+}
+i.fa-circle-question {
+    background-color: lightgray;
+    border-radius: 50px;
+}
+span.tri{
+    font-size: 8px;
+}
+i.fa-magnifying-glass{
+    color: #03C75A;
+}
+header>#space{
+    width: 30%;
+}
+
+header>#top-login{
+    width: 25%;
+    margin-right: 10px;
+    text-align: right;
+}
+
+main{
+    margin: 0px 20px;
+    display: flex;
+
+}
+
+main > div.aa{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+main > div.ma-nav {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+}
+main > div.ma-nav > nav {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: white lightgray white white;
+}
+main > div.ma-nav > nav > div.nav-top {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: white white lightgray white;
+}
+
+main > div.ma-nav > nav > div.nav-top > span {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+main > div.ma-nav > nav > div.nav-top > span.m-hover:hover {
+    background-color:rgb(242, 242, 242);
+    border-radius: 10px;
+    margin: 5px 0px;
+} 
+
+main > div.ma-nav > nav > div.nav-top > span:first-child {
+    background-color:#E0F8EB;
+    border-radius: 10px;
+}
+
+main > div.ma-nav > nav > div.nav-top > span:first-child > a{
+    color: rgb(7, 177, 7);
+}
+
+span.n{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+main > aside { 
+    width: 25%;
+}
+
+main > div.ma-nav > nav > div.nav-bottom {
+    margin-left: 40px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > div.ma-nav > nav > div.nav-bottom > span {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+main > section {
+    width: 55%;
+    margin-top: 17px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main > section > div.favorite {
+    display: flex;
+    justify-content: space-between;
+}
+
+#favor {
+    font-size: 13pt;
+    font-weight: bold;
+}
+#time {
+    color: grey;
+    font-size: 9pt;
+}
+#more {
+    font-size: 9pt;
+    color: darkgrey;
+    font-weight: bold;
+
+}
+section > div.favor-image {
+    display: flex;
+    justify-content: space-between;
+}
+section > div.favor-image > div> a > img{
+    width: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+section > div.favor-image > div> a > span.image-text1{
+    margin-left: 10px;
+    font-weight: bold;
+}
+section > div.favor-image > div> a > span.image-text2{
+    margin-left: 15px;
+    font-size: 9pt;
+    color : rgb(155, 154, 154);
+}
+
+section > div.sub-favor{
+    margin: 20px 20px;
+}
+
+section > div.sub-favor > div.sf-1 {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    border-color: white white lightgray white;
+}
+section > div.sub-favor > div.sf-1 > div.sf-1-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section > div.sub-favor > div.sf-1 > div.sf-1-a > span:first-child{
+    font-weight: bold;
+    color: darkgray;
+    font-size: 11pt;
+}
+section > div.sub-favor > div.sf-1 > div.sf-1-a > span:first-child > a:hover {
+    text-decoration: underline;
+}
+section > div.sub-favor > div.sf-1 > div.sf-1-a > span:last-child {
+    font-size: 9pt;
+    color: rgb(155, 154, 154);
+}
+section > div.sub-favor > div.sf-1 > div.sf-1-b {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section > div.sub-favor > div.sf-1 > div.sf-1-b > a >img {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+}
+main > section > div.neighbor {
+    margin-top: 50px;
+}
+
+main > section > div.neighbor > div.menu-nebor {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#nebor {
+    font-size: 13pt;
+    font-weight: bold;
+}
+#more {
+    font-size: 9pt;
+    color: darkgrey;
+    font-weight: bold;
+}
+section > div.neighbor > div.sub-nebor > div.sn-1 {
+    margin: 20px 0px;
+    border: 1px solid;
+    border-color: white white lightgray  white;
+}
+section > div.neighbor > div.sub-nebor > div.sn-1 > span > a:hover{
+    text-decoration: underline;
+}
+section > div.neighbor > div.sub-nebor > div.sn-1 > span:first-child{
+    font-size: 10pt;
+}
+section > div.neighbor > div.sub-nebor > div.sn-1 > span:first-child > a > span {
+    font-size: 10pt;
+    color: #03C75A;
+}
+section > div.neighbor > div.sub-nebor > div.sn-1 > span:last-child > a{
+    font-size: 9pt;
+    color: darkgrey;
+}
+
+
+main > section > div.subject-favorite {
+    margin-top: 50px;
+}
+
+#nebor {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+main > section > div.subject-favorite > ul > li{
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+
+main > section > div.subject-favorite > ul > li > a{
+    font-size: 11pt;
+    font-weight: bold;
+    color: rgb(135, 134, 134);
+}
+
+
+main > section > div.subject-favorite > div.subject-favor{
+       margin: 20px 20px;
+}
+
+main > section > div.subject-favorite > div.subject-favor > div.suf-1 {
+    margin: 20px 0px;
+    padding: 10px 0px;
+    display: flex;
+    /* justify-content: space-between; */
+    border: 1px solid;
+    border-color: white white lightgray white;
+}
+
+main > section > div.subject-favorite > div.subject-favor > div.suf-1 > div.suf-1-a {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section > div.subject-favorite > div.subject-favor> div.suf-1 > div.suf-1-a > a >img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 30px;    
+}
+
+main > section > div.subject-favorite > div.subject-favor > div.suf-1 > div.suf-1-b {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main > section > div.subject-favorite > div.subject-favor > div.suf-1 > div.suf-1-b> span:first-child{
+    font-weight: bold;
+    color: darkgray;
+    font-size: 11pt;
+}
+main > section > div.subject-favorite > div.subject-favor > div.suf-1 > div.suf-1-b > span:first-child > a:hover {
+    text-decoration: underline;
+}
+main > section > div.subject-favorite > div.subject-favor > div.suf-1 > div.suf-1-b > span:last-child > a {
+    font-size: 9pt;
+    color: grey;
+}
+
+aside{
+    margin-top: 50px;
+}
+
+aside > div.aslogin {
+    width: 90%;
+
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+aside > div.aslogin > div {
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+    padding: 5px;
+    
+    border-radius: 10px;
+    background-color: #03C75A;
+}
+aside > div.aslogin > div:hover {
+    background-color: #026b31;
+}
+aside > div.aslogin > div > a{
+    font-size: large;
+    color: white;
+    font-weight: bold;
+}
+aside > div.aslogin > div > a > small{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+aside > div.aslogin > ul{
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+aside > div.aslogin > ul > li {
+    display: inline;
+    font-size: small;
+    padding: 2px;
+}
+aside > div.aslogin > ul > li > a {    
+    color: darkgray;
+}
+
+aside > div.aslogin > ul > li > a:hover  {
+    text-decoration: underline;
+}
+
+aside > div.notice {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 90%;
+    background-color: #F7F8F9;
+    border: 5px solid #F7F8F9;
+    border-radius: 10px;
+}
+
+aside > div.notice > div.nt1 { 
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 9pt;
+    font-weight: bold ;
+}
+
+aside > div.notice > div.nt2 > span { 
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    
+}
+aside > div.notice > div.nt2 > span > a { 
+
+    font-size: 8pt;
+    color: rgb(73, 73, 73);
+}
+
+aside > div.notice > div.nt2 > span > a:hover{
+    text-decoration: underline;
+}
+
+aside > div.cafe {
+    margin: 30px 10px 0px 10px;   
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside > div.cafe > div.cafe-bg {
+    height: 40px;
+    border-radius: 10%;
+    background-color: #F7F8F9;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+aside > div.cafe > div.cafe-bg > a {
+    font-size: 10pt;
+    font-weight: bold;
+    color: rgb(73,73,73);
+}
+aside > div.cafe > div.cafe-bg > a > span.heart-first {
+    width: 15pt;
+    height: 15pt;
+    background-color: skyblue;
+    border-radius: 50%;
+    text-align: center;
+}
+aside > div.cafe > div.cafe-bg > a > span > i.fa-heart {
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+}
+aside > div.cafe > div.cafe-bg > a > span.hart-end:hover {
+    text-decoration: underline;
+}
+
+aside > div.cafe > div.cafe-bg > a > span.mug-first {
+    width: 15pt;
+    height: 15pt;
+    background-color: rgb(21, 240, 14);
+    border-radius: 50%;
+    text-align: center;
+}
+aside > div.cafe > div.cafe-bg > a > span > i.fa-mug-hot {
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+}
+aside > div.cafe > div.cafe-bg > a > span.mug-end:hover {
+    text-decoration: underline;
+}
+
+aside > div.banner > img {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+aside > div.robot {
+    margin: 30px 10px;
+    background-color: #F7F8F9;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside > div.robot > div {
+    margin: 10px;
+}
+aside > div.robot > div.robo-text > a:hover { 
+    text-decoration: underline;
+}
+
+aside > div.robot > div.robo-img > a > i {
+    font-size: 18pt;
+    color: #03C75A;
+}
+
+aside > div.robot > div.robo-text > a > span.robo-text-1 {
+    font-size: 8pt;
+    color: rgb(128, 128, 128);
+}
+
+aside > div.robot > div.robo-text > a > span.robo-text-2 {
+    font-size : 10pt;
+    font-weight: bold;
+}
+
+aside > div.alarm {
+    margin: 30px 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border: 1px solid;
+    border-color: white white lightgray white;   
+}
+aside > div.alarm > a {
+    font-size: 12px;
+    color: rgb(99, 98, 98);
+    font-weight: bold;
+}
+
+aside > div.alarm > a:last-child:hover {
+    text-decoration: underline;
+}
+
+aside > div.footer {
+    margin-top: 30px;
+    color : grey;
+    text-align: center;
+    font-size: 8pt;
+}
+
