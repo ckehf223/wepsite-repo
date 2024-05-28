@@ -1,4 +1,4 @@
-# naver clone coding-team
+# naver clone coding
 
 ### 프로젝트 설명
 >팀원들과 협업이라는 것을 조금이나마 경험해보고자 NAVER 웹사이트 클론 코딩을 시작하였고,
